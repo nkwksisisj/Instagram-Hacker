@@ -157,19 +157,19 @@ class Instagram(TorManager,Browser):
 						attempts = self.tries if self.tries else ''
 
 						subprocess.call(['clear'])
-						print ''
-						print ' +------- Instagram -------+'
-						print ' [-] Username: {}{}{}'.format(creds,self.username.title(),self.n)
-						print ' [-] Password: {}{}{}'.format(creds,pwd,self.n)
-						print ' [-] Proxy IP: {}{}{}'.format(self.b,ip,self.n)
-						print ' [-] Attempts: {}{}{}'.format(self.y,attempts,self.n)
-						print ''
+						print('')
+print(' +------- Instagram -------+')
+print(' [-] Username: {}{}{}'.format(creds,self.username.title(),self.n))
+print(' [-] Password: {}{}{}'.format(creds,pwd,self.n))
+print(' [-] Proxy IP: {}{}{}'.format(self.b,ip,self.n))
+print(' [-] Attempts: {}{}{}'.format(self.y,attempts,self.n))
+print('')
 
-						if not ip:
-							print ' [-] Obtaining Proxy IP {}...{}'.format(self.g,self.n)
-							self.changeIp()
-							time.sleep(1.3)
-							self.display()
+if not ip:
+	print(' [-] Obtaining Proxy IP {}...{}'.format(self.g,self.n))
+	self.changeIp()
+	time.sleep(1.3)
+	self.display()
 				def main():
 					# assign arugments
 					args = argparse.ArgumentParser()
